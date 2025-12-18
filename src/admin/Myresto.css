@@ -1,0 +1,52 @@
+.myresto-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.myresto-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 18px 20px 14px 20px;
+  display: flex;
+  flex-direction: column;
+  border-left: 5px solid #007bff22;
+  transition: box-shadow 0.2s;
+}
+
+.myresto-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.myresto-dish-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.myresto-delete-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.myresto-delete-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.myresto-card-body {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 4px;
+}

@@ -1,0 +1,200 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+  padding: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 320px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+}
+
+.card-body {
+  padding: 22px 20px 18px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+  letter-spacing: 0.5px;
+}
+
+.card-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-size: 1rem;
+}
+
+.card-info-label {
+  color: #888;
+  font-weight: 500;
+}
+
+.card-info-value {
+  color: #222;
+  font-weight: 500;
+}
+
+.card-text {
+  margin-bottom: 7px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  margin-top: 10px;
+  align-self: flex-end;
+  background-color: #007bff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 48%; /* 2 cards per row for medium screens */
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* 1 card per row for mobile screens */
+    max-width: 100%;
+  }
+}
+
+/* Contact section styling */
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 18px 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.contact-card > div {
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-card strong {
+  color: #007bff;
+  margin-bottom: 2px;
+}
+
+.contact-card span {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Optional: Style for the info section at the top */
+.restaurant-details > p {
+  display: inline-block;
+  margin: 0 18px 10px 0;
+  background: #f1f3f6;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.card-subtle-info {
+  margin-top: 12px;
+  padding: 8px 10px;
+  background: #f7f7fa;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+.card-subtle-info strong {
+  font-weight: 500;
+  color: #aaa;
+  margin-right: 2px;
+}
+
+.card-container h2 {
+  width: 100%;
+  text-align: center !important;
+  margin: 24px 0;
+}
+
+/* Add to Restaurants.css */
+.fancy-sort-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #f4f8fb;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(40,123,245,0.08);
+  padding: 14px 28px;
+  gap: 16px;
+  max-width: 370px;
+  margin: 32px 32px 18px auto;
+}
+
+.fancy-sort-label {
+  font-weight: 700;
+  color: #007bff;
+  font-size: 1.13rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.fancy-sort-select {
+  border-radius: 8px;
+  padding: 7px 18px;
+  border: 2px solid #007bff;
+  font-weight: 600;
+  background: #fff;
+  color: #007bff;
+  font-size: 1.05rem;
+  transition: border 0.2s;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(40,123,245,0.07);
+}
+.fancy-sort-select:focus {
+  border-color: #28a745;
+}
+
+

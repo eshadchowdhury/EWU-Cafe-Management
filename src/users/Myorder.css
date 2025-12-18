@@ -1,0 +1,72 @@
+.gotorder-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px 24px;
+}
+.gotorder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.gotorder-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 20px 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+  border-left: 6px solid #e0e0e0;
+  position: relative;
+}
+.gotorder-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.gotorder-dish {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+.gotorder-status-badge {
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: #888;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.gotorder-status-pending {
+  background: #ffc107 !important;
+  color: #222 !important;
+  border-left-color: #ffc107 !important;
+}
+.gotorder-status-confirmed {
+  background: #28a745 !important;
+  color: #fff !important;
+  border-left-color: #28a745 !important;
+}
+.gotorder-status-cancelled {
+  background: #dc3545 !important;
+  color: #fff !important;
+  border-left-color: #dc3545 !important;
+}
+.gotorder-card-body {
+  margin-bottom: 14px;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.gotorder-empty {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  padding: 40px 0;
+}

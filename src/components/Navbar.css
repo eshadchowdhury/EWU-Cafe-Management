@@ -1,0 +1,60 @@
+.navbar {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  background: linear-gradient(90deg, #f8fafc 60%, #e3f0ff 100%);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #007bff !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #333 !important;
+  margin-right: 12px;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+  padding: 7px 16px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  background: #e3f0ff;
+  color: #007bff !important;
+}
+
+.navbar-nav .nav-link.disabled {
+  color: #bbb !important;
+  background: none;
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 2px;
+}
+
+.ms-auto {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.btn-primary, .navbar .btn-primary {
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+
+.btn-primary:hover, .navbar .btn-primary:hover {
+  background: #0056b3;
+}
+
+img[alt="profile"] {
+  border: 2px solid #007bff;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+}
